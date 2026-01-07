@@ -117,8 +117,8 @@ public class CoinflipGUI implements Listener {
         final OfflinePlayer winner, final OfflinePlayer loser, final CoinflipGame game,
         final Player targetPlayer, final Location regionLoc, final boolean isWinnerThread) {
 
-        final ConfigurationSection animationConfig1 = plugin.getConfig().getConfigurationSection("coinflip-gui.animation.1.");
-        final ConfigurationSection animationConfig2 = plugin.getConfig().getConfigurationSection("coinflip-gui.animation.2.");
+        final ConfigurationSection animationConfig1 = plugin.getConfig().getConfigurationSection("coinflip-gui.animation.1");
+        final ConfigurationSection animationConfig2 = plugin.getConfig().getConfigurationSection("coinflip-gui.animation.2");
 
         final ItemStack firstAnimationItem = (animationConfig1 != null)
                 ? ItemStackBuilder.getItemStack(animationConfig1).build()
